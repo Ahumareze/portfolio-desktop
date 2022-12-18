@@ -1,4 +1,6 @@
-.container{
+
+/*********** project styling *************/
+.item_container{
     height: fit-content;
     width: fit-content;
     overflow: hidden;

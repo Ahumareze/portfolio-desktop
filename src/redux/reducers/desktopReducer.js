@@ -1,13 +1,16 @@
 import * as actionTypes from '../actionTypes';
 
 const initialState = {
-    desktopStack: []
+    desktopStack: [],
+    topPosition: false
 };
 
-const desktopReducer = (state = initialState, actions) => {
-    switch(actions.types){
+const desktopReducer = (state = initialState, action) => {
+    switch(action.type){
         case(actionTypes.OPENFOLDER):
-            return {...state, desktopStack: actions.value};
+            return {...state, desktopStack: action.value};
+        case(actionTypes.SETPOSITION):
+            return {...state, topPosition: action.value}
     }
 
     return state;

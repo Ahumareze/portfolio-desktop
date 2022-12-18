@@ -34,3 +34,8 @@
         transform: scale(1);
     }
 }
+.item{
+    height: 400px;
+    width: 500px;
+    background-color: red;
+}

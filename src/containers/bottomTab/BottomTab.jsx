@@ -10,7 +10,7 @@ import setting from '../../assets/icons/setting.png';
 import user from '../../assets/icons/user.png';
 import folder from '../../assets/icons/folder.svg';
 
-function BottomTab() {
+const BottomTab = React.memo(() => {
 
     const Item = ({icon, png}) => {
         if(png){
@@ -38,6 +38,6 @@ function BottomTab() {
             </div>
         </div>
     )
-}
+})
 
 export default BottomTab
