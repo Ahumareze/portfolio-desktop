@@ -1,0 +1,91 @@
+.container{
+    height: 83px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.BottomTab{
+    height: fit-content;
+    padding: 20px;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.3);
+    border: 0.5px solid #828282;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.item{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    cursor: pointer;
+    animation-name: reverse;
+    animation-duration: 1s;
+}
+.item:hover{
+    animation: myanimation 0.5s forwards;
+}
+.item:hover img{
+    animation: myanimationspin 0.5s forwards;
+}
+.item img{
+    height: 40px;
+    animation-name: reversespin;
+    animation-duration: 1s;
+}
+.freeIcon{
+    height: 50px;
+    cursor: pointer;
+    animation-name: reverse;
+    animation-duration: 1s;
+}
+.freeIcon:hover{
+    animation: myanimation 0.5s forwards;
+}
+
+/************ Animations ************/
+@keyframes myanimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+@keyframes reverse {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes myanimationspin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+@keyframes reversespin {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

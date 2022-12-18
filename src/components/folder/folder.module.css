@@ -1,0 +1,36 @@
+.container{
+    text-align: center;
+    cursor: pointer;
+}
+.container img{
+    height: 55px;
+    animation-name: reverse;
+    animation-duration: 1s;
+}
+.container img:hover{
+    animation: myanimation 0.5s forwards;
+}
+.container p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    margin: 0;
+    margin-top: 10px;
+}
+@keyframes myanimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+@keyframes reverse {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}

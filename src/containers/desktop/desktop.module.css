@@ -1,0 +1,16 @@
+.container{
+    height: calc(100vh - 50px);
+    width: 100vw;
+    padding: 50px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    z-index: 0;
+    position: fixed;
+}
+.foldersContainers{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

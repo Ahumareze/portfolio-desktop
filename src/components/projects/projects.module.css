@@ -1,0 +1,77 @@
+.container{
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.item{
+    height: fit-content;
+    width: 200px;
+}
+.item_img{
+    height: 150px;
+    width: 200px;
+    border-radius: 12px;
+    background-color: pink;
+    cursor: pointer;
+    background-position: center center;
+    background-size: contain;
+    overflow: hidden;
+}
+.item_img:hover .item_backdrop{
+    animation: myanimation 0.5s ease forwards;
+}
+.title{
+    color: #ECECEC;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--poppins);
+    margin: 0;
+    margin-top: 15px;
+}
+.item_backdrop{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    animation-name: reverse;
+    animation-duration: 0.5s;
+    opacity: 0;
+}
+.item_backdrop img{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+@keyframes myanimation {
+    from {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+  
+@keyframes reverse {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+}
