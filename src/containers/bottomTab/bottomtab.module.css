@@ -34,12 +34,12 @@
     animation-name: reverse;
     animation-duration: 1s;
 }
-.item:hover{
+/* .item:hover{
     animation: myanimation 0.5s forwards;
 }
 .item:hover img{
     animation: myanimationspin 0.5s forwards;
-}
+} */
 .item img{
     height: 40px;
     animation-name: reversespin;

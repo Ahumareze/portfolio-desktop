@@ -58,6 +58,6 @@
     max-height: 600px;
     overflow-y: scroll;
     background-color: var(--folderBg);
-    padding: 20px;
+    /* padding: 20px; */
     box-sizing: border-box;
 }

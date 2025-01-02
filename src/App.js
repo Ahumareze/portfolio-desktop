@@ -14,10 +14,9 @@ function App() {
 
   return (
     <Canva>
-      
       <Desktop />
       {desktopStack.map((i, idx) => (
-        <OpenedFolder key={idx} title={i.title} position={i.position} top={i.top} left={i.left} item={i}>
+        <OpenedFolder key={idx} title={i.title} position={idx} top={i.top} left={i.left} item={i}>
           {i.child}
         </OpenedFolder>
       ))}
